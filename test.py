@@ -14,3 +14,6 @@ def run_git_submit(work_dir):
     return result
 
 
+if __name__ == '__main__':
+    run_git_submit("/usr/local/fundhelper-data")
+
