@@ -33,7 +33,7 @@ def run_git_submit(work_dir):
     print(stdout_value.decode())
     print("---------------err-------------")
     print(stderr_value.decode())
-    return stdout_value, stderr_value
+    return stdout_value.decode(), stderr_value.decode()
 
 
 if __name__ == '__main__':
