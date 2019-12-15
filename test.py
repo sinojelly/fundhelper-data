@@ -30,9 +30,9 @@ def run_git_submit(work_dir):
     cmd = commit_cmd + " & " + push_cmd + " & " + status_cmd
     # result = os.popen(cmd).read()
     stdout_value, stderr_value = run_external_cmd(cmd)
-    print(stdout_value)
+    print(stdout_value.decode())
     print("---------------err-------------")
-    print(stderr_value)
+    print(stderr_value.decode())
     return stdout_value, stderr_value
 
 
